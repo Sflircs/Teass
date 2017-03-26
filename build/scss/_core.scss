@@ -28,7 +28,7 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
@@ -92,6 +92,9 @@ body {
   min-height: 100%;
   background-color: $body-bg;
   z-index: 800;
+  @media (max-width: $screen-header-collapse) {
+    padding-top: $navbar-height;
+  }
 }
 
 .main-footer {
@@ -115,9 +118,9 @@ body {
   }
   .content-wrapper,
   .right-side {
-    padding-top: 50px;
+    padding-top: $navbar-height;
     @media (max-width: $screen-header-collapse) {
-      padding-top: 100px;
+      padding-top: $navbar-height * 2;
     }
   }
   &.layout-boxed {
@@ -160,7 +163,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* General Links */

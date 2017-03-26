@@ -2,6 +2,19 @@
  * Component: Label
  * ----------------
  */
+.label{
+  display: inline;
+  padding: .3em .6em .3em;
+  font-size: 70%;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 1.0em;
+}
+
 .label-default {
   background-color: $gray;
   color: #444;

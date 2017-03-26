@@ -133,6 +133,9 @@
     &:hover {
       text-decoration: none;
     }
+    > .fa-angle-left {
+      color: darken($sidebar-dark-submenu-color, 5%);
+    }
   }
   //All submenus
   .treeview-menu {
@@ -205,7 +208,7 @@
     //links
     > a {
       border-left: 3px solid transparent;
-      font-weight: 600;
+      font-weight: 400;
     }
     //Hover and active states
     &:hover > a,
@@ -219,7 +222,7 @@
     &.active {
       border-left-color: $icon-active-color;
       > a {
-        font-weight: 600;
+        font-weight: 500;
       }
     }
     //First Level Submenu
@@ -245,7 +248,7 @@
         color: $sidebar-light-submenu-hover-color;
       }
       &.active > a {
-        font-weight: 600;
+        font-weight: 500;
       }
     }
   }

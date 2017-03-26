@@ -9,7 +9,7 @@ $boxed-layout-bg-image-path: "../img/boxed-bg.png";
 //COLORS
 //--------------------------------------------------------
 //Primary
-$light-blue: #3c8dbc;
+$light-blue: #0091e6;
 //Danger
 $red: #dd4b39;
 //Success
@@ -45,7 +45,7 @@ $link-color: $light-blue;
 $link-hover-color: lighten($link-color, 15%);
 
 //Body background (Affects main content background only)
-$body-bg: #ecf0f5;
+$body-bg: #fafafa;
 
 //SIDEBAR SKINS
 //--------------------------------------------------------
@@ -60,11 +60,12 @@ $sidebar-dark-submenu-color: lighten($sidebar-dark-submenu-bg, 40%);
 $sidebar-dark-submenu-hover-color: #fff;
 
 //Light sidebar
-$sidebar-light-bg: #f9fafc;
-$sidebar-light-hover-bg: lighten(#f0f0f1, 1.5%);
+$sidebar-light-bg: #eee;
+//$sidebar-light-hover-bg: lighten(#f0f0f1, 1.5%);
+$sidebar-light-hover-bg: #cdcdcd;
 $sidebar-light-color: #444;
 $sidebar-light-hover-color: #000;
-$sidebar-light-submenu-bg: $sidebar-light-hover-bg;
+$sidebar-light-submenu-bg: lighten($sidebar-light-hover-bg, 8%);
 $sidebar-light-submenu-color: #777;
 $sidebar-light-submenu-hover-color: #000;
 

@@ -10,7 +10,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 50px;
+  padding-top: $navbar-height;
   //min-height: 100%;
   width: $sidebar-width;
   z-index: 810;
@@ -19,7 +19,7 @@
   width $transition-speed $transition-fn;
   @include transition-transform($transition-rule);
   @media (max-width: $screen-header-collapse) {
-    padding-top: 100px;
+    padding-top: $navbar-height * 2;
   }
   @media (max-width: $screen-xs-max) {
     @include translate(-$sidebar-width, 0);
@@ -93,7 +93,7 @@
     margin: 0;
     padding: 0;
     > a {
-      padding: 12px 5px 12px 15px;
+      padding: 15px 5px 15px 30px;
       display: block;
       > .fa,
       > .glyphicon,
@@ -108,7 +108,7 @@
     }
   }
   li.header {
-    padding: 10px 25px 10px 15px;
+    padding: 10px 25px 10px 30px;
     font-size: 12px;
   }
   li > a > .fa-angle-left {
@@ -140,7 +140,7 @@
     > li {
       margin: 0;
       > a {
-        padding: 5px 5px 5px 15px;
+        padding: 12px 5px 12px 50px;
         display: block;
         font-size: 14px;
         > .fa,
