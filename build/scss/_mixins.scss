@@ -148,11 +148,21 @@
       }
     }
   }
-  //The sidebar search form
-  .sidebar-form {
-    @include border-radius(3px,3px,3px,3px);
-    border: 1px solid lighten($sidebar-dark-bg, 10%);
-    margin: 10px 10px;
+  //The navibar search form
+  .navibar-search-form {
+    padding: 28px 15px;
+    margin: 0;
+    .input-group{
+      position: absolute;
+      width: 100%;
+      left: 0;
+      input{
+        width: 100%;
+      }
+      .input-group-btn{
+        width: 1%;
+      }
+    }
     input[type="text"], .btn {
       box-shadow: none;
       background-color: lighten($sidebar-dark-bg, 10%);
